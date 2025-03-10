@@ -1,15 +1,49 @@
-# simple-http-bun-server
+# Simple HTTP bun server
 
-To install dependencies:
+## Features
 
-```bash
-bun install
-```
+- Create, Read, Update, and Delete (CRUD) operations on an array of users
+- Lightweight and fast
+- Easy to set up and use
 
-To run:
+## Requirements
 
-```bash
-bun run index.ts
-```
+- [Bun](https://bun.sh/) - A fast JavaScript runtime
 
-This project was created using `bun init` in bun v1.2.4. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Installation
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/yourusername/simple-http-bun-server.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```sh
+    cd simple-http-bun-server
+    ```
+
+3. Install dependencies:
+
+    ```sh
+    bun install
+    ```
+
+## Usage
+
+1. Start the server:
+
+    ```sh
+    bun run server.js
+    ```
+
+2. The server will be running at `http://localhost:3003`
+
+## API Endpoints
+
+- `GET /users` - Retrieve all users
+- `GET /useres/:id/info` - fetch user by id
+- `POST /users/create` - Create a new user
+- `PUT /users/:id/update` - Update a user by ID
+- `DELETE /users/:id/delete` - Delete a user by ID
