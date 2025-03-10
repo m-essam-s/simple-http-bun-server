@@ -40,6 +40,14 @@ Bun.serve({
             user.name = name;
             return Response.json(user);
         },
+        "/users/:id/delete": req => {
+            const index = users.findIndex(user => user.id === Number(req.params.id));
+            if (index === -1) {
+                return new Response("User not found", { status: 404 });
+            }
+            users.splice(index, 1);
+            return new Response("User deleted", { status: 204 });
+        },
     },
 });
 
