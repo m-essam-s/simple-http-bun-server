@@ -12,6 +12,7 @@ Bun.serve({
     port: PORT,
     routes: {
         "/": () => new Response("Welcome to the user API!"),
+        "/users": () => Response.json(users),
     },
 });
 
