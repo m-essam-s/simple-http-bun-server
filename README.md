@@ -15,7 +15,7 @@
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/simple-http-bun-server.git
+    git clone https://github.com/m-essam-s/simple-http-bun-server.git
     ```
 
 2. Navigate to the project directory:
